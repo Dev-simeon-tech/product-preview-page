@@ -15,7 +15,8 @@ const Cart = ({ cartVisibility, setCartVisibility }) => {
     const handleClickOutsideCart = (e) => {
       if (
         e.target.closest(".cart-container") ||
-        e.target.closest(".cart-icon-container")
+        e.target.closest(".cart-icon-container") ||
+        e.target.closest(".cart-item-container")
       )
         return;
       setCartVisibility(false);
