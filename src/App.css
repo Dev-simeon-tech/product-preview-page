@@ -1,0 +1,21 @@
+#root {
+  position: relative;
+}
+
+@media (min-width: 60rem) {
+  .main-content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5rem; */
+  }
+  .main-content .carousel-container {
+    width: 43%;
+  }
+  .main-content > * {
+    width: 43%;
+  }
+}

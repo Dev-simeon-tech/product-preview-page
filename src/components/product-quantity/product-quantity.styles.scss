@@ -1,0 +1,29 @@
+.product-quantity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Light-grayish-blue);
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+
+  button {
+    background: transparent;
+    height: 2.85rem;
+    border: none;
+  }
+  span {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+@media (min-width: 60rem) {
+  .product-quantity-container {
+    margin: 0;
+    width: 35%;
+
+    button {
+      cursor: pointer;
+    }
+  }
+}

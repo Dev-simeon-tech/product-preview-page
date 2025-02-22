@@ -1,0 +1,28 @@
+.cart-icon-container {
+  position: relative;
+
+  span {
+    background-color: var(--Orange);
+    color: white;
+    position: absolute;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    border-radius: 20px;
+    top: -40%;
+    right: -50%;
+  }
+}
+
+@media (min-width: 60rem) {
+  .cart-icon-container {
+    cursor: pointer;
+
+    .shopping-icon {
+      &:is(:focus-visible, :hover) {
+        path {
+          fill: var(--Very-dark-blue);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.btn {
+  background-color: var(--Orange);
+  border: none;
+  width: 100%;
+  padding: 1.2rem;
+  color: var(--Very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0px 6px 24px -5px var(--Orange);
+}
+@media (min-width: 60rem) {
+  .btn {
+    cursor: pointer;
+
+    &:is(:hover, :focus-visible) {
+      background-color: hsl(26, 100%, 70%);
+    }
+  }
+}

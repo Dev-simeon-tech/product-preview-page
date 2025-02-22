@@ -1,0 +1,56 @@
+:root {
+  font-family: "Kumbh Sans", serif;
+  font-optical-sizing: auto;
+
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+
+  --desktop-screen-width: 60rem;
+}
+/* css reset */
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+body,
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* css reset */
