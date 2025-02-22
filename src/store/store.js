@@ -9,11 +9,11 @@ const persistConfig = {
   storage,
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
-const middleWares = [process.env.NODE_ENV !== "production" && logger];
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// const middleWare = [process.env.NODE_ENV !== "production" && logger];
+// const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const composeEnhancers = composeEnhancer(applyMiddleware(...middleWares));
+// const composeEnhancers = composeEnhancer(applyMiddleware(...middleWares));
 
-export const store = createStore(persistedReducer, undefined, composeEnhancers);
+export const store = createStore(persistedReducer);
 
 export const persistor = persistStore(store);
